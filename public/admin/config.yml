@@ -1,0 +1,127 @@
+backend:
+  name: github
+  repo: Pykto/portfolio
+  branch: master
+  base_url: https://portfolio-auth.alan-hdez-olv.workers.dev
+  auth_endpoint: auth
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: about
+        label: About
+        file: src/content/docs/about.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+
+          - label: Description
+            name: description
+            widget: string
+            required: false
+
+          - label: Body
+            name: body
+            widget: markdown
+
+      - name: contact
+        label: Contact
+        file: src/content/docs/contact.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+
+          - label: Description
+            name: description
+            widget: string
+            required: false
+
+          - label: Body
+            name: body
+            widget: markdown
+
+  - name: projects
+    label: Projects
+    folder: src/content/docs/projects
+    create: true
+    slug: "{{slug}}"
+    filter:
+      field: type
+      value: project
+    fields:
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Description
+        name: description
+        widget: string
+
+      - label: Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+
+      - label: Status
+        name: status
+        widget: select
+        options:
+          - Planned
+          - Active
+          - Completed
+          - Archived
+
+      - label: Tags
+        name: tags
+        widget: list
+
+      - label: GitHub
+        name: github
+        widget: string
+        required: false
+
+      - label: Type
+        name: type
+        widget: hidden
+        default: project
+
+      - label: Body
+        name: body
+        widget: markdown
+
+  - name: knowledge
+    label: Knowledge Base
+    folder: src/content/docs/knowledge
+    create: true
+    slug: "{{slug}}"
+    filter:
+      field: type
+      value: article
+    fields:
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Description
+        name: description
+        widget: string
+        required: false
+
+      - label: Tags
+        name: tags
+        widget: list
+
+      - label: Type
+        name: type
+        widget: hidden
+        default: article
+
+      - label: Body
+        name: body
+        widget: markdown
