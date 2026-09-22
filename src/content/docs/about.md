@@ -6,7 +6,7 @@ description: A little bit of me and my projects
 
 Mi nombre es Alan y este es un pequeño espacio que creé como portafolio y como carta de presentación.
 
-Espero que te agrade y si algo aquí te sirve como información o inspiración siéntete con la total libertad de usarlo como gustes.
+Espero que te agrade y si algo aquí te sirve como información o inspiración, siéntete con la total libertad de usarlo como gustes.
 
 ## Principales tecnologías
 
