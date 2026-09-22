@@ -1,7 +1,8 @@
 ---
-title: Sobre mí
-description: Un poco sobre mi y mis proyectos
+title: About me
+description: A little bit of me and my projects
 ---
+
 # Hola
 
 Mi nombre es Alan y este es un pequeño espacio que creé como portafolio y como carta de presentación.

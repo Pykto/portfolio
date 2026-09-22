@@ -4,22 +4,31 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://alanhdez.com.mx',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Alan Hernández Olivero',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/pykto' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'About',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-						{ label: 'About me', slug: 'guides/about' },
+						{ label: 'About me', slug: 'about' },
 					],
 				},
 				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
+					label: 'Projects',
+					items: [{ autogenerate: { directory: 'projects' } }],
+				},
+				{
+					label: 'Knowledge Base',
+					items: [{ autogenerate: { directory: 'knowledge' } }],
+				},
+				{
+					label: 'Contact',
+					items: [
+						{ label: 'Contact', slug: 'contact' },
+					],
 				},
 			],
 		}),
