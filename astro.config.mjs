@@ -9,6 +9,10 @@ export default defineConfig({
 		starlight({
 			title: 'Alan Hernández Olivero',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/pykto' }],
+			logo: {
+				src: './src/assets/logowobg.svg',
+				replacesTitle: true,
+			},
 			sidebar: [
 				{
 					label: 'About',

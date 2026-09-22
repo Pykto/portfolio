@@ -1,0 +1,44 @@
+---
+title: Portfolio
+description: Portfolio showcase for proyects
+tags:
+  - "#Astro #Decap #Starlight #StaticSite #WebDevelopment"
+type: article
+---
+
+import { Card } from '@astrojs/starlight/components';
+
+This web page by itself is my most recent proyect. It was done with the purpose of having an space to show projects and save some of my notes.
+
+## Vision
+
+I wanted to create a static web page that allow me to render Markdown files for my projects and notes. Something like a documentation page, but more personal. I wanted to be able to customize my pages as much as I want while still being able to create content fast. Also I like to have a CMS (Content Manager System) integrated to be able to create thispages on any place or even from my phone.
+
+In resume the portfolio should allow:
+
+- Render Markdown files.
+- Be static webpage.
+- Have a CMS to create content.
+- Be on my own domain (This is not actually a must, but since I'm doing this project I would like to have it as a detail).
+
+# Technologies
+
+Being that said, these are the technologies that I use for this project:
+
+<Card title="Astro" icon="astro">
+  As the web framework I used Astro, since the web site is expected to be static, Astro is a an excellent option already design for this task. It will allow me to crease a fast site with minimum JS.
+  <br/>
+  [Astro](https://astro.build/)
+</Card>
+
+<Card title="Starlight" icon="starlight">
+  By this point you may already have notice that I'm using starlight as the template for this astro proyect. I wanted to base on this one since one of the main purpose was to create this page looking like a documentation page. Starlight is exactly the template that does that.
+  <br/>
+  [Starlight](https://starlight.astro.build/)
+</Card>
+
+<Card title="Github" icon="github">
+  In this case I'm using Github as my main content source. Being this page static it can storage the whole website easily. Also, for my authenticator in the CMS I'm using OAuth from github. This allow me to have at least some secority on the editor. It is linked to a worker on cloudflare that manage this process.
+  <br/>
+  [Github](https://github.com)
+</Card>
