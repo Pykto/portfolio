@@ -28,4 +28,4 @@ I like to be involved in the community, this always help me to learn new stuff, 
 
 I liked this image
 
-!\[Banana duck](../../../public/images/78232315.jpg)
+![Banana duck](/images/78232315.jpg "Banana duck")
